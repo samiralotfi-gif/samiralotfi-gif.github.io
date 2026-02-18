@@ -4,12 +4,32 @@
   <meta charset="UTF-8">
   <title>Contact – Samira Lotfi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ICON LIBRARY (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body { margin: 0; font-family: system-ui, sans-serif; background: #f0f2f5; display: flex; }
     .sidebar { width: 220px; background: #2f3542; color: white; height: 100vh; padding-top: 40px; position: fixed; }
     .sidebar a { display: block; padding: 15px 20px; color: white; text-decoration: none; font-weight: 600; }
     .sidebar a:hover { background: #57606f; }
     .content { margin-left: 220px; padding: 40px; max-width: 900px; }
+
+    .icon-link {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    .icon-link i {
+      margin-right: 10px;
+      font-size: 22px;
+      width: 28px;
+      text-align: center;
+      color: #2f3542;
+    }
+
     .cv-button {
       display: inline-block;
       padding: 12px 20px;
@@ -18,8 +38,9 @@
       text-decoration: none;
       border-radius: 6px;
       font-weight: 600;
-      margin-top: 20px;
+      margin-top: 25px;
     }
+
     .cv-button:hover {
       background: #57606f;
     }
@@ -40,10 +61,25 @@
 <div class="content">
   <h1>Contact</h1>
 
-  <p>Email: your.email@example.com</p>
-  <p>LinkedIn: your LinkedIn link</p>
-  <p>Google Scholar: your profile link</p>
-  <p>ORCID: your ORCID link</p>
+  <div class="icon-link">
+    <i class="fa-solid fa-envelope"></i>
+    <a href="mailto:your.email@example.com">your.email@example.com</a>
+  </div>
+
+  <div class="icon-link">
+    <i class="fa-brands fa-linkedin"></i>
+    <a href="https://www.linkedin.com/in/YOUR-LINK" target="_blank">LinkedIn Profile</a>
+  </div>
+
+  <div class="icon-link">
+    <i class="fa-brands fa-google"></i>
+    <a href="https://scholar.google.com/citations?user=YOURID" target="_blank">Google Scholar</a>
+  </div>
+
+  <div class="icon-link">
+    <i class="fa-brands fa-orcid"></i>
+    <a href="https://orcid.org/YOUR-ORCID" target="_blank">ORCID</a>
+  </div>
 
   <!-- Download CV Button -->
   <a href="SamiraLotfiCV.pdf" download class="cv-button">Download CV</a>
