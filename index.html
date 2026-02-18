@@ -7,32 +7,41 @@
 
   <style>
     body {
-      font-family: system-ui, sans-serif;
       margin: 0;
+      font-family: system-ui, sans-serif;
       background: #f0f2f5;
-      color: #222;
+      display: flex;
     }
 
-    nav {
-      background: #eee;
-      padding: 12px;
-      text-align: center;
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: #2f3542;
+      color: white;
+      height: 100vh;
+      padding-top: 40px;
+      position: fixed;
+      left: 0;
+      top: 0;
     }
 
-    nav a {
-      margin: 0 15px;
+    .sidebar a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
       text-decoration: none;
-      color: #333;
       font-weight: 600;
     }
 
-    .container {
+    .sidebar a:hover {
+      background: #57606f;
+    }
+
+    /* Main content */
+    .content {
+      margin-left: 220px;
+      padding: 40px;
       max-width: 900px;
-      margin: 40px auto;
-      padding: 30px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
 
     header {
@@ -56,7 +65,7 @@
 
     h2 {
       margin-top: 40px;
-      border-bottom: 2px solid #eee;
+      border-bottom: 2px solid #ddd;
       padding-bottom: 8px;
     }
 
@@ -65,26 +74,21 @@
       font-size: 18px;
       margin-top: 8px;
     }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #777;
-      margin-top: 40px;
-    }
   </style>
 </head>
 
 <body>
 
-<nav>
+<!-- LEFT SIDEBAR -->
+<div class="sidebar">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="projects.html">Projects</a>
   <a href="contact.html">Contact</a>
-</nav>
+</div>
 
-<div class="container">
+<!-- MAIN CONTENT -->
+<div class="content">
 
   <header>
     <img src="samiralotfi.jpg" alt="Profile photo">
@@ -101,10 +105,6 @@
   </section>
 
 </div>
-
-<footer>
-  © 2026 Samira Lotfi — All rights reserved
-</footer>
 
 </body>
 </html>
