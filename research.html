@@ -12,7 +12,7 @@
     .content { margin-left: 220px; padding: 40px; max-width: 900px; }
     h2 { border-bottom: 2px solid #ddd; padding-bottom: 8px; }
 
-    /* MOBILE FIX — SAFARI‑PROOF */
+    /* MOBILE FIX — SAFARI PROOF */
     @media (max-width: 768px) {
       body {
         flex-direction: column;
@@ -20,8 +20,8 @@
 
       .sidebar {
         width: 100% !important;
-        height: auto !important;
-        position: relative !important;
+        height: auto !important;     /* FIX #1 */
+        position: relative !important; /* FIX #2 */
         padding-top: 20px;
       }
 
