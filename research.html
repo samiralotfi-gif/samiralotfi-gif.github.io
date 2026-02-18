@@ -12,16 +12,17 @@
     .content { margin-left: 220px; padding: 40px; max-width: 900px; }
     h2 { border-bottom: 2px solid #ddd; padding-bottom: 8px; }
 
-    /* MOBILE FIX */
+    /* MOBILE FIX — SAFARI‑PROOF */
     @media (max-width: 768px) {
       body {
         flex-direction: column;
       }
 
       .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;   /* IMPORTANT FIX */
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        padding-top: 20px;
       }
 
       .sidebar a {
@@ -30,7 +31,7 @@
       }
 
       .content {
-        margin-left: 0;
+        margin-left: 0 !important;
         padding: 20px;
       }
     }
