@@ -10,6 +10,29 @@
     .sidebar a { display: block; padding: 15px 20px; color: white; text-decoration: none; font-weight: 600; }
     .sidebar a:hover { background: #57606f; }
     .content { margin-left: 220px; padding: 40px; max-width: 900px; }
+
+    /* MOBILE FIX */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      .sidebar a {
+        display: inline-block;
+        padding: 12px 15px;
+      }
+
+      .content {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 
@@ -23,7 +46,6 @@
   <a href="patents.html">Patents</a>
   <a href="contact.html">Contact</a>
 </div>
-
 
 <div class="content">
   <h1>About Me</h1>
